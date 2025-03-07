@@ -27,7 +27,7 @@ Links are to places we have ordered hardware from previously, and are included s
 - Soldering iron and solder.
 - [Camera Enclosure](https://www.amazon.com/OdiySurveil-Aluminum-Surveillance-Weatherproof-Adjustable/dp/B0811QX5YW/ref=asc_df_B0811QX5YW/) This is the enclosure that our 3D printed "sled" fits. Other enclosures not tested.
 - 3D printed sled for mounting the Pi, camera and IMU. [Download STL files](/Setup/hardware/STREAM_CAMERA_SLED.zip). <br>
- <img src="/app/static/images/STREAM_CAMERA_ASSY_PI-5_RevB.JPG" alt="3D printed sled" width="400" /><br>
+ <img src="/app/static/images/SPEC_sled_mount.jpg" alt="3D printed sled" width="400" /><br>
 
 
 
@@ -56,7 +56,8 @@ The Raspberry Pi 5 includes a real time clock (RTC) module that will keep track 
 <img src="/app/static/images/Pi_with_battery.png" alt="Pi battery install" width="500" /><br>
 
 ##### 4. 3D Printed Sled
-In order to mount all of the pieces of the SPEC system together, we have a 3D-Printed sled that holds all the devices. Below are some images showing assembly. You might need to use a bit of force to screw into the 3D printed standoffs.
+In order to mount all of the pieces of the SPEC system together, we have a 3D-Printed sled that holds all the devices. Below are some images showing assembly. You might need to use a bit of force to screw into the 3D printed standoffs. **The sled shown in the images below is an older model, for the new model you need to screw in the camera and RPi holders from the bottom before the following steps.**
+
 - Gather all the required parts as shown below.<br>
 <img src="/app/static/images/3D_sled_assy_1.jpg" alt="3D sled assembly" width="500" /><br>
 - Screw in the Pi and IMU (two screws each) and connect them using the jumper wires.<br>

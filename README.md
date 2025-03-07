@@ -5,9 +5,9 @@ Set up PIV (Particle Image Velocimetry) Edge Camera (SPEC)
 
 
 ## Description
-The SPEC is a fully contained and continuous PIV calculation system. Once a user sets it up on a riverbank SPEC will take PIV calculations at a continuous user specified rate. SPEC is also set up to be customized by the user depending on the river. A web-application stored on SPEC and accessed by connecting to SPEC’s Wi-Fi access point, allows easy setup and customization on site 
+The SPEC is a fully contained and continuous Particle Image Velocimetry (PIV) calculation system. Once a user sets it up on a riverbank, SPEC will aquire images at a user specified rate and use them to perform PIV calculations. SPEC is also set up to be customized by the user depending on the river. A web-application stored on SPEC and accessed by connecting to SPEC’s Wi-Fi access point allows easy setup and customization on site 
 
-This repository includes the code for system configuration and calibration, image capture, image processing and undistorting, homography, and PIV analysis for a field site. The results of the pipeline are 2D velocity vector fields, represented in a plot, overlaid on the measurement area
+This repository includes the code for system configuration and calibration, image capture, image processing and undistorting, homography, and PIV analysis for a field site. The results of the pipeline are 2D velocity vector fields, represented in a plot overlaid on the measurement area.
 
 ### SPEC System
 
@@ -25,9 +25,9 @@ This repository includes the code for system configuration and calibration, imag
 All materials and diagrams needed to build a SPEC camera system are located in the [Setup folder](Setup/) of this repository's directory, including all necessary documentation. 
 
 ## Usage
-SPEC was built to be a bank-mounted camera system to measure river surface velocities. The system is a completely contained data collection and processing unit. We designed this system with citizen science in mind, keeping the cost of materials low and all 3D-printed models and code open sourced.
+SPEC was developed to be a bank-mounted camera system to measure river surface velocities. The system is a completely self-contained data collection and processing unit. We designed this system with citizen science in mind, keeping the cost of materials low and all 3D-printed models and code are available open source.
 
-Citizen science was also in mind with the deployment process in the field. A user just needs a setup SPEC system and a place to mount it. Then using the web-application a user can customize the PIV calculations for the current river conditions.
+Citizen science was also a priority when planning the deployment process in the field. A user just needs a SPEC system and a place to mount it. Then using the web-application a user can customize the parameters used during the PIV calculations for the current river conditions.
 
 More information can be found in the [Docs folder](Docs/) of this repository.
 
