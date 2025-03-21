@@ -37,7 +37,8 @@ In order to properly run the SPEC software, the IMU and camera need to be connec
 
 <img src="/app/static/images/spec_Pi_wiring.png" alt="Pi wiring" width="500" /><br>
 
-Notes: The IMU in the wiring diagram does not have as many pins as the one we used for development.
+Notes: The IMU in the wiring diagram does not have as many pins as the one we used for development.Also, the colors of the jumper used in the diagram do not have to be the ones you use. The diagram is for wire placement the colors chosen were used to help distinguish between the four 
+wires.
 [Here is the GPIO pinout for the Raspberry Pi 5.](https://www.hackatronic.com/raspberry-pi-5-pinout-specifications-pricing-a-complete-guide/)
 
 ##### 2. Raspberry Pi Fan
@@ -56,13 +57,21 @@ The Raspberry Pi 5 includes a real time clock (RTC) module that will keep track 
 <img src="/app/static/images/Pi_with_battery.png" alt="Pi battery install" width="500" /><br>
 
 ##### 4. 3D Printed Sled
-In order to mount all of the pieces of the SPEC system together, we have a 3D-Printed sled that holds all the devices. Below are some images showing assembly. You might need to use a bit of force to screw into the 3D printed standoffs. **The sled shown in the images below is an older model, for the new model you need to screw in the camera and RPi holders from the bottom before the following steps.**
+In order to mount all of the pieces of the SPEC system together, we have a 3D-Printed sled that holds all the devices. Below are some images showing assembly. You might need to use a bit of force to screw into the 3D printed standoffs.
 
 - Gather all the required parts as shown below.<br>
 <img src="/app/static/images/3D_sled_assy_1.jpg" alt="3D sled assembly" width="500" /><br>
-- Screw in the Pi and IMU (two screws each) and connect them using the jumper wires.<br>
+- Start by putting together the sled.<br>
+<img src="/app/static/images/sled_parts.jpg" alt="Sled Parts" width="500" /><br>
+  - Screw in camera holder.<br>
+  <img src="/app/static/images/camera_holder.png" alt="Camera Holder" width="500" /><br>
+  - Screw in Pi holder.<br>
+  <img src="/app/static/images/battery_holder.png" alt="Pi Holder" width="500" /><br>
+  - Place RTC battery in holder and add cover.<br>
+<img src="/app/static/images/rtc_holder.png" alt="RTC Holder" width="500" /><br>
+- Screw in the Pi and IMU (two screws each) and connect them using the jumper wires, also plug in RTC battery.<br>
 <img src="/app/static/images/Pi_on_sled.jpg" alt="Pi screwed into sled" width="500" /><br>
--Screw in the camera, make sure it is right side up.<br>
+- Screw in the camera, make sure it is right side up. For this camera white cord pluggin is on the bottom. <br>
 <img src="/app/static/images/Pi_camera.png" alt="Pi with camera" width="500" /><br>
 - The suggested camera enclosure comes with two predrilled holes for the ethernet and power passthrough connectors. To also include a USB pass through power connector, we need to drill another hole in the center. You will also need to connect the DC-DC converter with the power passthrough and USB-C plug-in for the Pi.<br>
 <img src="/app/static/images/enclosure.png" alt="Pi with camera" width="500" /><br>
