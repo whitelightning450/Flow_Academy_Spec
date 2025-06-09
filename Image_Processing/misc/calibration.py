@@ -79,9 +79,9 @@ pickle.dump(dist, open( "../dist.pkl", "wb" ))
 # Save calibrations to Offsite Processing folder for 
 # later independent processing.
 source = "../cameraMatrix.pkl"
-destination = "../../OffsiteProcessing/cameraMatrix.pkl"
+destination = "../../Offsite_Processing/cameraMatrix.pkl"
 source2 = "../dist.pkl"
-destination2 = "../../OffsiteProcessing/dist.pkl"
+destination2 = "../../Offsite_Processing/dist.pkl"
 shutil.copy(source, destination)
 shutil.copy(source2, destination2)
 
