@@ -25,7 +25,7 @@ source ${PARENT_DIR}/common_functions.sh
 
 #used to log messages to webpage
 log_message() {
-    echo "$1" >> "$LOG_FILE"
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" >> "$LOG_FILE"
 }
 
 # Log the start of the script
