@@ -350,8 +350,9 @@ def ensemble_piv(stack, piv_params, BASE_DIR):
 
     # Log to webpage
     with open(f'{BASE_DIR}/script.log', 'a') as log:
+        timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
         log.write(
-            f'{len(batches)} batches of 50 images will be run through FFT process\n'
+            f'[{timestamp}] {len(batches)} batches of 50 images will be run through FFT process\n'
         )
 
     # Loop through batches
@@ -367,7 +368,8 @@ def ensemble_piv(stack, piv_params, BASE_DIR):
 
         # Log batch number to webpage
         with open(f'{BASE_DIR}/script.log', 'a') as log:
-            log.write(f'Running batch {batch_number} of {len(batches)}\n')
+            timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+            log.write(f'[{timestamp}] Running batch {batch_number} of {len(batches)}\n')
         prealoaded_time = time.time()
         preloaded_images = preload_batch(batch)
 
@@ -400,8 +402,9 @@ def ensemble_piv(stack, piv_params, BASE_DIR):
 
         # Log to webpage
         with open(f'{BASE_DIR}/script.log', 'a') as log:
+            timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
             log.write(
-                f'Adding results from batch {batch_number} to total results\n')
+                f'[{timestamp}] Adding results from batch {batch_number} to total results\n')
 
         # Aggregate results from the result queue
         while not result_queue.empty():
@@ -433,7 +436,8 @@ def ensemble_piv(stack, piv_params, BASE_DIR):
 
     # Log to webpage
     with open(f'{BASE_DIR}/script.log', 'a') as log:
-        log.write(f'Finished FFT process for all image batches\n')
+        timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+        log.write(f'[{timestamp}] Finished FFT process for all image batches\n')
 
     # Find peaks
     pst = time.time()
@@ -454,7 +458,8 @@ def ensemble_piv(stack, piv_params, BASE_DIR):
 
     # Log to webpage
     with open(f'{BASE_DIR}/script.log', 'a') as log:
-        log.write(f'Post Processing!\n')
+        timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+        log.write(f'[{timestamp}] Post Processing!\n')
 
     post = time.time()
     u_piv, v_piv = post_proc(u_piv, v_piv, piv_params, BASE_DIR)
@@ -524,9 +529,11 @@ def ensemble_piv(stack, piv_params, BASE_DIR):
 
     # Log to webpage
     with open(f'{BASE_DIR}/script.log', 'a') as log:
-        log.write(f'Ensemble PIV completed in {runTime:.2f} s\n')
+        timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+        log.write(f'[{timestamp}] Ensemble PIV completed in {runTime:.2f} s\n')
 
     # Log to spec_app.log
-    print(f"Ensemble PIV completed in {runTime:.2f} s")
+    timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+    print(f"[{timestamp}] Ensemble PIV completed in {runTime:.2f} s")
 
     return x_piv, y_piv, u_piv_out, v_piv_out, corr_map
