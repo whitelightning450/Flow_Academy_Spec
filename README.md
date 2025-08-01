@@ -38,6 +38,11 @@ This PIV algorithm of this project was ported from TRiVIA:
 - Legleiter, C.J., 2024, TRiVIA - Toolbox for River Velocimetry using Images from Aircraft (ver. 2.1.3, September, 2024): U.S. Geological software release, 
     https://doi.org/10.5066/P9AD3VT3.
 
+Contribution and Modification of original SPEC code with the USGS FLOW (Future Leaders in Water Observation) Academy [Son Do, Bhanu Poudyal, and Kylie Corcoran] for the following:
+- Timestamps included in test_PIV.sh and ensemble_PIV.py
+- Automatic PIV output uploader, lte_upload.py. Script must be manually run to enable.
+- Lengthening of 3D-printed sled mesh to allow for easier access to PI's SD card port.
+
 ## License
 SPEC is licensed under the Creative Commons Zero v1.0 Universal [LICENSE.txt](LICENSE.txt)
 
